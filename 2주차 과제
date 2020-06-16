@@ -1,0 +1,551 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPL61AV32qc8WbSGxrtFII0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/youn-hyun-shick/-/blob/master/2%EC%A3%BC%EC%B0%A8%20%EA%B3%BC%EC%A0%9C\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Lqd5sxxas0rW",
+        "colab_type": "text"
+      },
+      "source": [
+        "### 01번 문제 (Data Type)\n",
+        "\n",
+        "__다음 변수 a, 변수 b, 변수 c의 자료형을 출력하세요.__"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "U0BtZlFsvX-7",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 73
+        },
+        "outputId": "3154baf6-6012-4bbf-960f-bdfbc8b83233"
+      },
+      "source": [
+        "1\n",
+        "a = 'str'\n",
+        "b = 123\n",
+        "c = True\n",
+        "\n",
+        "\n",
+        "print(a) \n",
+        "print(b)\n",
+        "print(c)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "str\n",
+            "123\n",
+            "True\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1gR8X465xuCj",
+        "colab_type": "text"
+      },
+      "source": [
+        "### 02번 문제 (for문)\n",
+        "\n",
+        "__다음 변수 num_list에 있는 요소를 모두 더한 값을 for문을 활용하여 변수 answer에 저장하고  그 값을 출력하세요.__"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "UgSiA6rewjfP",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "outputId": "8a7e5303-2fb8-49dc-bc5c-7f581abde146"
+      },
+      "source": [
+        "num_list = [1,2,3,4,5,6,7,8,9]\n",
+        "answer = 0\n",
+        "\n",
+        "for s in range(0,9):\n",
+        "  answer = answer + num_list[s]\n",
+        "\n",
+        "\n",
+        "print(answer)\n"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "45\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "PtKl46h3S4wL",
+        "colab_type": "text"
+      },
+      "source": [
+        "### 03번 문제 (slice string)\n",
+        "\n",
+        "__다음 변수 date를 슬라이스해서 year(년), month(월), day(일)를 각각 출력하세요.__ (출력 : 2020 05 11)\n",
+        "\n",
+        "(tip: None을 지우고 date를 슬라이싱해서 각각의 데이터를 저장하세요!)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "P8werP5xvtaA",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "outputId": "9d7b5519-8bd0-4133-c151-de243738dd4d"
+      },
+      "source": [
+        "3\n",
+        "date = '20200511'\n",
+        "\n",
+        "year = date[0:4]\n",
+        "month = date[4:6]\n",
+        "day = date[6:9]\n",
+        "\n",
+        "print(year, month, day)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "2020 05 11\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sOjirt93r2Ob",
+        "colab_type": "text"
+      },
+      "source": [
+        "### 04번 문제(for)\n",
+        "\n",
+        "__다음 변수 summary에 1 부터 100까지 모두 더한 값을 저장하여 출력하세요.__\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "RKerPxBFxEqG",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "outputId": "99dd6a39-89f7-4aec-ce0a-57949c4d0e52"
+      },
+      "source": [
+        "4\n",
+        "x = 1\n",
+        "sum = 0\n",
+        "\n",
+        "while x < 101:\n",
+        "    sum = sum + x\n",
+        "    x = x+1\n",
+        "\n",
+        "print(sum)"
+      ],
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "5050\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "g-nnpUwya5Lp",
+        "colab_type": "text"
+      },
+      "source": [
+        "### 05번 문제(string reverse)\n",
+        "\n",
+        "__다음 변수 hangul의 문자열을 거꾸로 출력하세요. (출력:‘사바마라다나가’)__\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "NobR9-ZXxKwu",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "outputId": "870dc520-04cf-45f5-cff2-1b820acdff27"
+      },
+      "source": [
+        "5\n",
+        "\n",
+        "hangul = '가나다라마바사'\n",
+        "\n",
+        "hangul[::-1]\n"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'사바마라다나가'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uUQ7rQWeclz5",
+        "colab_type": "text"
+      },
+      "source": [
+        "### 06번 문제(str -> list -> int 변환)\n",
+        "\n",
+        "__다음 변수 num에는 공백으로 구분된 4개의 점수가 들어 있습니다. 평균을 구해서 출력하세요.__"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "r44uePXUxPGu",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 73
+        },
+        "outputId": "6012a37a-d24a-44da-9948-eb01e17d7bdf"
+      },
+      "source": [
+        "6\n",
+        "\n",
+        "num = \"70 50 90 70\"\n",
+        "\n",
+        "num_list = (int(num[0:3]),int(num[3:5]),int(num[5:8]),int(num[8:11]))\n",
+        "\n",
+        "print(num_list)\n",
+        "\n",
+        "result = sum(num_list)\n",
+        "\n",
+        "print(result)\n",
+        "\n",
+        "print(result/len(num_list))\n"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "(70, 50, 90, 70)\n",
+            "280\n",
+            "70.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "167vtalddRGH",
+        "colab_type": "text"
+      },
+      "source": [
+        "### 07번 문제(if문)\n",
+        "\n",
+        "__다음 변수 n에 입력한 값이 짝수 일 경우 ‘짝수’를, 짝수가 아닐 경우 ‘짝수가 아닙니다’를 판별하여 출력하세요.__ (출력: __짝수__ or __짝수가 아닙니다__)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "CJBzZr6ZxfaO",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 55
+        },
+        "outputId": "a0fbe650-5cbe-48a2-c0d8-56bd2b4ecb5c"
+      },
+      "source": [
+        "7\n",
+        "\n",
+        "n = int(input('숫자를 입력해주세요'))\n",
+        "\n",
+        "if n % 2 == 0:\n",
+        "  answer = '짝수'\n",
+        "\n",
+        "else :\n",
+        "  answer = '짝수가 아닙니다'\n",
+        "\n",
+        "print(answer)"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "숫자를 입력해주세요4\n",
+            "짝수\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "QLySHJw9eB01",
+        "colab_type": "text"
+      },
+      "source": [
+        "### 08번 문제(산술 연산 및 list index)\n",
+        "\n",
+        "__직사각형의 대각선의 길이를 구하는 공식은 밑변의 제곱 + 높이의 제곱 = 대각선의 제곱이다.__\n",
+        "\n",
+        "__다음 변수 list_08에는 하나의 직사각형의 밑변과 높이가 저장되어 있습니다.__\n",
+        "\n",
+        "__각각 밑변이 3이고 높이가 4일 때, 직사각형의 대각선의 제곱의 길이를 출력하세요.__"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "KKNpEH18xoN8",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "outputId": "f3ab3e44-9cae-455d-f853-2a2a939b438a"
+      },
+      "source": [
+        "8\n",
+        "# 주어진 변수(list_08) 직접 수정불가\n",
+        "list_08 = [3, 4]\n",
+        "down = int(list_08[0])\n",
+        "high = int(list_08[1])\n",
+        "\n",
+        "length = down**2+high**2\n",
+        "\n",
+        "\n",
+        "print(length)\n",
+        "\n",
+        "# 출력"
+      ],
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "25\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "efgr8XT3j0QE",
+        "colab_type": "text"
+      },
+      "source": [
+        "### 09번 문제(소수 판별 프로그램)\n",
+        "__입력받은 숫자가 소수인지 아닌지 출력하는 프로그램을 작성 해 주세요.__ (출력 : __소수__ or __소수가 아닙니다__)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xPtFtqt32uBy",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 55
+        },
+        "outputId": "103ce5b9-e5f9-435f-d1f3-203390ade1f3"
+      },
+      "source": [
+        "while(True): \n",
+        "  try: \n",
+        "    input_num = int(input(\"약수를 구할 숫자를 입력해주세요 : \")) \n",
+        "    break; \n",
+        "  except: \n",
+        "    print(\"숫자만 입력하실 수 있습니다\") \n",
+        "  \n",
+        "count = 0 \n",
+        "for a in range(1, input_num+1): \n",
+        "  if input_num == a: \n",
+        "    count += 1 \n",
+        "  elif input_num % a == 0:\n",
+        "    count += 1 \n",
+        "    \n",
+        "if count == 2: \n",
+        "  print(input_num,\"은(는) 소수입니다\")\n",
+        "else: print(input_num, \"은(는) 소수가 아닙니다\")\n",
+        "\n",
+        "\n"
+      ],
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "약수를 구할 숫자를 입력해주세요 : 79\n",
+            "79 은(는) 소수입니다\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "QshpWJfxfO6A",
+        "colab_type": "text"
+      },
+      "source": [
+        "### 1번 문제 (Hypothesis)\n",
+        "\n",
+        "다음 공식은 Hypothesis를 구하는 공식입니다. 다음과 같이 값이 주어졌을때 h(x)의 값을 구하시오.\n",
+        "\n",
+        "*   W = 3\n",
+        "*   x = 10\n",
+        "*   b = 1\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "upv_hWgL8yks",
+        "colab_type": "text"
+      },
+      "source": [
+        "# $$h(x) = Wx + b$$"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xYekH5Pl0D3w",
+        "colab_type": "text"
+      },
+      "source": [
+        "답 : 31"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6sIvtew0eHSy",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 2번 문제 (Cost function)\n",
+        "\n",
+        "다음 공식은 Cost를 구하는 공식입니다. 다음과 같이 값이 주어졌을때 cost의 값을 구하세요.\n",
+        "\n",
+        "* W = 2\n",
+        "* x = [2, 4, 8]\n",
+        "* y = [5, 12, 21]\n",
+        "\n",
+        "(tip: x1=2, y1=5 / x2=4, y2=12 / x3=8, y3=21)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tjWpl4O1oXy1",
+        "colab_type": "text"
+      },
+      "source": [
+        "# $$cost(W) =  \\frac{1}{n}\\sum_{i=1}^n (Wx^{(i)}-y^{(i)})^2$$"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sQMi2ASxeJtt",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 3번 문제 (Logistic regression sigmoid function)\n",
+        "\n",
+        "다음 공식은 로지스틱 시그모이드 함수입니다. x가 __양의 무한대로__ 갈때 f(x)가 수렴하는 값을 구하세요.\n",
+        "\n",
+        "![대체 텍스트](https://prwatech.in/blog/wp-content/uploads/2020/02/logi3.png)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "k_UC4fWw7Ipp",
+        "colab_type": "text"
+      },
+      "source": [
+        "답 : 1"
+      ]
+    }
+  ]
+}
